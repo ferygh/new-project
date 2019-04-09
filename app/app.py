@@ -3,7 +3,7 @@ from flask import jsonify
 import json
 import pymysql
 import subprocess
-conn= pymysql.connect("localhost","root","k4hvd","reports")
+conn= pymysql.connect("localhost","root","PASSWD","reports")
 x=conn.cursor()
 sql = """SELECT * FROM wether ORDER BY id DESC LIMIT 1"""
 
