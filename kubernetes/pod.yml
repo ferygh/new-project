@@ -1,0 +1,12 @@
+# The example Pod utilizing the profile loaded by the sample daemon.
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: fery-app
+spec:
+  containers:
+  - name: fery-app
+    image: feregh/flask-sample-one:firsttry
+    ports:
+    - containerPort: 5000
